@@ -1,0 +1,28 @@
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Ensure content takes available space */
+.content {
+    min-height: calc(100vh - 50px); /* Adjust based on footer height */
+}
+
+/* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    height: 50px; /* Fixed height */
+    
+    /* Flexbox for perfect centering */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}

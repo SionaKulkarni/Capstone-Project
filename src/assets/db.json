@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "john.doe@example.com",
+      "password": "password123",
+      "firstName": "John",
+      "lastName": "Doe",
+      "location": "New York",
+      "mobileNumber": "1234567890"
+    },
+    {
+      "id": 2,
+      "email": "jane.smith@example.com",
+      "password": "password456",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "location": "Los Angeles",
+      "mobileNumber": "0987654321"
+    },
+    {
+      "email": "siona.kulkarni@gmail.com",
+      "password": "Siona@123",
+      "firstName": "Siona",
+      "lastName": "Kulkarni",
+      "location": "Pune",
+      "mobileNumber": "4562572639",
+      "id": 3
+    },
+    {
+      "email": "siona.kulkarni12@gmail.com",
+      "password": "Siona@1234",
+      "firstName": "Siona",
+      "lastName": "Kulkarni",
+      "location": "Pune",
+      "mobileNumber": "7741028670",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1741952165218,
+      "name": "Television",
+      "description": "A smart television",
+      "manufacturer": "Onida",
+      "price": 20000,
+      "quantity": 10
+    },
+    {
+      "id": 1742059408620,
+      "name": "Mobile",
+      "description": "A smartphone",
+      "manufacturer": "Samsung",
+      "price": 15000,
+      "quantity": 1
+    }
+  ]
+}
