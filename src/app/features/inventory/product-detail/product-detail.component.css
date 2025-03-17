@@ -1,0 +1,29 @@
+/* Ensure full viewport height and remove default margin */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-start; /* Aligns content towards the top */
+    background-color: #f4f4f4;
+}
+
+/* Wrapper to position the card */
+.center-wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 80vh; /* Adjust height to reduce excess space */
+    width: 100vw; /* Full viewport width */
+    margin-top: -50px; /* Moves the card upwards */
+}
+
+/* Style for product details card */
+.product-details-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 350px;
+}

@@ -1,0 +1,39 @@
+<div class="container">
+    <form class="product-form" (ngSubmit)="onAdd(addProductForm)" #addProductForm="ngForm">
+        <h2>Add Product</h2>
+        <label>Name:</label>
+        <input type="text" name="name" ngModel required minlength="3" #name="ngModel" />
+        <div *ngIf="name.invalid && name.touched">
+            <small *ngIf="name.errors?.['required']">Product name is required.</small>
+            <small *ngIf="name.errors?.['minlength']">Name must be at least 3 characters long.</small>
+        </div>
+
+        <label>Description:</label>
+        <input type="text" name="description" ngModel required #description="ngModel" />
+        <div *ngIf="description.invalid && description.touched">
+            <small>Description is required.</small>
+        </div>
+
+        <label>Manufacturer:</label>
+        <input type="text" name="manufacturer" ngModel required #manufacturer="ngModel" />
+        <div *ngIf="manufacturer.invalid && manufacturer.touched">
+            <small>Manufacturer is required.</small>
+        </div>
+
+        <label>Price:</label>
+        <input type="number" name="price" ngModel required min="0" #price="ngModel" />
+        <div *ngIf="price.invalid && price.touched">
+            <small>Price is required.</small>
+            <small>Price cannot be negative.</small>
+        </div>
+
+        <label>Quantity:</label>
+        <input type="number" name="quantity" ngModel required min="1" #quantity="ngModel" />
+        <div *ngIf="quantity.invalid && quantity.touched">
+            <small>Quantity is required.</small>
+            <small>Quantity must be at least 1.</small>
+        </div>
+
+        <button type="submit" [disabled]="addProductForm.invalid">Add Product</button>
+    </form>
+</div>

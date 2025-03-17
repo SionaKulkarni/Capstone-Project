@@ -1,0 +1,86 @@
+/* Ensure full-page height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: Arial, sans-serif;
+}
+
+/* Centering container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Card layout */
+.form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Title */
+.form-card h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Form input groups */
+.form-group {
+    margin-bottom: 12px;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input fields */
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Button styling */
+.update-button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.update-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.update-button:hover:not(:disabled) {
+    background: #0056b3;
+}
